@@ -1,0 +1,217 @@
+\
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Nabo — guía completa</title>
+<meta name="description" content="Guía educativa sobre el nabo: origen, cultivo, germinación, nutrición, preparaciones y precauciones.">
+<style>
+:root{
+  --bg:#f6f3ea; --card:#fffdf8; --ink:#263226; --muted:#667064;
+  --green:#4e6b43; --green2:#789261; --purple:#9b6881; --line:#e2ded1;
+  --accent:#d8b35d; --shadow:0 12px 30px rgba(43,55,39,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+a{color:var(--green)}
+.container{width:min(1120px,92%);margin:auto}
+.hero{min-height:72vh;display:grid;place-items:center;padding:70px 0;background:
+linear-gradient(110deg,rgba(28,43,28,.88),rgba(63,82,54,.60)),url("https://commons.wikimedia.org/wiki/Special:FilePath/Turnip_2622027.jpg") center/cover}
+.hero-inner{color:white;max-width:850px}
+.kicker{letter-spacing:.16em;text-transform:uppercase;font-weight:800;font-size:.78rem;color:#e8d49b}
+h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:.2em 0 .25em}
+.hero p{font-size:1.15rem;max-width:760px;color:#f5f5ed}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.badge{padding:8px 13px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(5px)}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,253,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;gap:22px;overflow:auto;padding:13px 0;white-space:nowrap;font-size:.92rem}
+.nav a{text-decoration:none;font-weight:700;color:var(--ink)}
+section{padding:70px 0}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:0 0 14px}
+h3{margin-top:0}
+.lead{font-size:1.08rem;color:var(--muted);max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:var(--shadow)}
+.stat{font-size:2rem;font-weight:900;color:var(--green)}
+.small{font-size:.9rem;color:var(--muted)}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;position:relative}
+.num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font-weight:900;margin-bottom:12px}
+.nutrition table{width:100%;border-collapse:collapse;margin-top:15px}
+.nutrition td,.nutrition th{padding:12px 8px;border-bottom:1px solid var(--line);text-align:left}
+.nutrition th{color:var(--green)}
+.callout{border-left:5px solid var(--accent);background:#fff9e9;padding:18px 20px;border-radius:12px}
+.warning{border-left:5px solid #b96c68;background:#fff3f1;padding:18px 20px;border-radius:12px}
+.img-card{overflow:hidden;border-radius:22px;box-shadow:var(--shadow);background:white;border:1px solid var(--line)}
+.img-card img{display:block;width:100%;height:100%;object-fit:cover}
+.caption{padding:11px 15px;font-size:.84rem;color:var(--muted)}
+.recipe{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.icon{font-size:2rem}
+footer{padding:40px 0 60px;background:#253126;color:#dfe7dc}
+footer a{color:#dce8d4}
+.sources{font-size:.9rem}
+@media(max-width:850px){.grid,.grid2{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid,.grid2,.timeline{grid-template-columns:1fr}.hero{min-height:68vh}.nav{gap:15px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+
+<header class="hero" id="inicio">
+  <div class="container hero-inner">
+    <div class="kicker">Guía de la hortaliza</div>
+    <h1>El nabo</h1>
+    <p><strong>Brassica rapa</strong> es una raíz comestible de la familia Brassicaceae. Se aprovechan tanto la raíz como, en muchas cocinas, sus hojas tiernas.</p>
+    <div class="badges">
+      <span class="badge">🌱 Germina: ~10 días</span>
+      <span class="badge">🥕 Cosecha: aprox. 50–60 días</span>
+      <span class="badge">🍋 21 mg de vitamina C / 100 g</span>
+      <span class="badge">❄️ Prefiere clima fresco</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="container nav">
+    <a href="#que-es">Qué es</a><a href="#origen">Origen</a><a href="#cultivo">Cultivo</a>
+    <a href="#nutricion">Nutrición</a><a href="#cocina">Preparaciones</a><a href="#precauciones">Precauciones</a>
+  </div>
+</nav>
+
+<main>
+<section id="que-es">
+  <div class="container">
+    <h2>¿Qué es el nabo?</h2>
+    <p class="lead">Es una hortaliza de raíz perteneciente a la especie <em>Brassica rapa</em>. La parte engrosada que solemos comer se forma a partir de la raíz y de la base del tallo. Su sabor puede ir de suave y ligeramente dulce a picante, especialmente cuando la raíz envejece.</p>
+    <div class="grid">
+      <article class="card"><div class="stat">Brassica rapa</div><p>Nombre científico. Pertenece a la misma especie amplia que incluye otros cultivos de <em>B. rapa</em>, aunque existen distintos grupos y variedades.</p></article>
+      <article class="card"><div class="stat">2 partes</div><p>La raíz y las hojas pueden aprovecharse. Las hojas tiernas se cocinan como otras verduras de hoja.</p></article>
+      <article class="card"><div class="stat">50–60 días</div><p>Muchas variedades llegan a tamaño de cosecha en este intervalo; el tiempo cambia según variedad, clima y manejo.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="origen" style="background:#eee9dc">
+  <div class="container grid2">
+    <div>
+      <h2>Origen e historia</h2>
+      <p>El origen exacto de la domesticación del nabo se sigue estudiando. La evidencia genética, arqueológica e histórica apunta a una historia antigua de <em>Brassica rapa</em> en Eurasia, con posibles centros de origen y domesticación en regiones de Europa y Asia.</p>
+      <p>Estudios recientes sitúan restos antiguos de <em>B. rapa</em> en el noroeste de China y señalan una historia de diversificación compleja. Por ello, es más preciso hablar de un <strong>origen euroasiático</strong> que atribuirlo a un único país.</p>
+      <div class="callout"><strong>Dato histórico:</strong> el nabo fue un cultivo importante en Europa mucho antes de la expansión de la papa y también se difundió ampliamente por Asia.</div>
+    </div>
+    <div class="img-card">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Turnip_2622027.jpg" alt="Nabos frescos con hojas verdes">
+      <div class="caption">Nabos frescos. Imagen: Wikimedia Commons, “Turnip 2622027.jpg”.</div>
+    </div>
+  </div>
+</section>
+
+<section id="cultivo">
+  <div class="container">
+    <h2>¿Cómo se cultiva?</h2>
+    <p class="lead">El nabo es relativamente rápido y se adapta bien a huertos domésticos. Para obtener raíces tiernas conviene evitar el calor excesivo y el estrés por falta de agua.</p>
+    <div class="timeline">
+      <div class="step"><div class="num">1</div><h3>Preparar</h3><p>Usa suelo suelto, bien drenado y con materia orgánica. Un pH aproximado de 6–7,5 es adecuado.</p></div>
+      <div class="step"><div class="num">2</div><h3>Sembrar</h3><p>Siembra directamente. Coloca las semillas a unos 2,5–5 cm entre sí y deja espacio suficiente entre hileras.</p></div>
+      <div class="step"><div class="num">3</div><h3>Germinar</h3><p>En buenas condiciones las plántulas pueden aparecer <strong>alrededor de 10 días</strong>.</p></div>
+      <div class="step"><div class="num">4</div><h3>Aclarar y regar</h3><p>Cuando aparezcan hojas verdaderas, aclara las plantas a unos 7–15 cm. Mantén humedad uniforme.</p></div>
+      <div class="step"><div class="num">5</div><h3>Cosechar</h3><p>Muchas variedades están listas en <strong>50–60 días</strong>. Las raíces jóvenes suelen ser más tiernas.</p></div>
+    </div>
+    <div class="grid" style="margin-top:22px">
+      <article class="card"><h3>☀️ Luz y clima</h3><p>Crece mejor en condiciones frescas. El calor puede reducir la calidad y favorecer raíces más duras o sabores más fuertes.</p></article>
+      <article class="card"><h3>💧 Riego</h3><p>La falta de agua puede hacer que las raíces sean amargas o leñosas. Mantén una humedad regular sin encharcar.</p></article>
+      <article class="card"><h3>🐛 Plagas</h3><p>Puede sufrir ataques de escarabajos pulga, gusanos de la raíz y enfermedades comunes de las brásicas. La rotación de cultivos ayuda a reducir problemas.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="nutricion" class="nutrition" style="background:#eee9dc">
+  <div class="container grid2">
+    <div>
+      <h2>Aportes nutricionales</h2>
+      <p class="lead">La raíz de nabo es ligera en calorías, aporta agua, fibra, vitamina C y minerales. Los valores dependen de la variedad y preparación.</p>
+      <div class="card">
+        <table>
+          <thead><tr><th>Nutriente</th><th>Por 100 g, crudo</th></tr></thead>
+          <tbody>
+            <tr><td>Energía</td><td>28 kcal</td></tr>
+            <tr><td>Carbohidratos</td><td>6,4 g</td></tr>
+            <tr><td>Fibra</td><td>1,8 g</td></tr>
+            <tr><td>Proteína</td><td>0,9 g</td></tr>
+            <tr><td>Grasa</td><td>0,1 g</td></tr>
+            <tr><td>Vitamina C</td><td>21 mg</td></tr>
+            <tr><td>Potasio</td><td>191 mg</td></tr>
+            <tr><td>Calcio</td><td>30 mg</td></tr>
+            <tr><td>Folato</td><td>15 µg</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🥬 ¿Y las hojas?</h3>
+      <p>Las hojas de nabo también son comestibles y pueden aportar cantidades importantes de vitamina K, folato, vitamina C, calcio y carotenoides. Su composición es diferente de la raíz, por lo que no conviene usar los datos de la raíz para describir las hojas.</p>
+      <h3>Beneficios nutricionales generales</h3>
+      <ul>
+        <li><strong>Vitamina C:</strong> contribuye al funcionamiento normal del sistema inmunitario y a la formación de colágeno.</li>
+        <li><strong>Fibra:</strong> contribuye a una alimentación saludable y al funcionamiento intestinal.</li>
+        <li><strong>Potasio:</strong> mineral esencial que participa en la función muscular y nerviosa.</li>
+        <li><strong>Baja densidad energética:</strong> puede formar parte de comidas abundantes con relativamente pocas calorías.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cocina">
+  <div class="container">
+    <h2>Preparaciones y usos en la cocina</h2>
+    <p class="lead">El nabo puede comerse crudo o cocido. Las raíces pequeñas suelen ser más suaves; las grandes pueden resultar más intensas y fibrosas.</p>
+    <div class="grid">
+      <article class="card recipe"><div class="icon">🥗</div><div><h3>Crudo</h3><p>En ensaladas, rallado, en láminas finas o como parte de una bandeja de vegetales. Combina bien con limón, aceite de oliva y hierbas.</p></div></article>
+      <article class="card recipe"><div class="icon">🍲</div><div><h3>Sopas y guisos</h3><p>Cortado en cubos aporta textura y un sabor ligeramente dulce y picante a caldos, sopas y estofados.</p></div></article>
+      <article class="card recipe"><div class="icon">🔥</div><div><h3>Asado</h3><p>En cubos, con aceite y especias, puede asarse hasta quedar dorado y tierno. Es una alternativa a otras raíces.</p></div></article>
+      <article class="card recipe"><div class="icon">🥔</div><div><h3>Purés</h3><p>Cocido y triturado puede combinarse con papa, zanahoria u otras raíces para obtener un puré cremoso.</p></div></article>
+      <article class="card recipe"><div class="icon">🥬</div><div><h3>Hojas salteadas</h3><p>Las hojas tiernas pueden lavarse, picarse y cocinarse como otras verduras de hoja, con ajo, aceite y limón.</p></div></article>
+      <article class="card recipe"><div class="icon">🫙</div><div><h3>Encurtido</h3><p>La raíz puede conservarse en preparaciones encurtidas, según la receta y el método de conservación utilizado.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="precauciones" style="background:#eee9dc">
+  <div class="container">
+    <h2>¿Quiénes deben tener precaución?</h2>
+    <p class="lead">No existe una prohibición general del nabo para la población sana. Las precauciones dependen sobre todo de la cantidad, la parte consumida y la situación individual.</p>
+    <div class="grid">
+      <article class="card"><h3>⚕️ Anticoagulantes</h3><p>Las <strong>hojas</strong> contienen bastante más vitamina K que la raíz. Si una persona usa warfarina u otro tratamiento cuya dosis se ajusta a la vitamina K, debe mantener una ingesta estable y consultar a su profesional de salud antes de hacer cambios importantes.</p></article>
+      <article class="card"><h3>🧂 Enfermedad renal</h3><p>La raíz aporta potasio. En personas con enfermedad renal o con una dieta restringida en potasio, la cantidad adecuada debe individualizarse con un médico o dietista.</p></article>
+      <article class="card"><h3>🦋 Tiroides</h3><p>Como otras crucíferas, contiene compuestos que pueden interferir con el metabolismo del yodo en determinadas circunstancias. Para la mayoría, las cantidades culinarias normales no son un motivo de prohibición; las personas con enfermedad tiroidea deben seguir la recomendación de su profesional.</p></article>
+      <article class="card"><h3>🚨 Alergia o intolerancia</h3><p>Quien haya presentado una reacción alérgica al nabo o a otras crucíferas debe evitar el alimento implicado y consultar para confirmar el desencadenante.</p></article>
+      <article class="card"><h3>👶 Niños pequeños</h3><p>La preparación y textura importan. Para niños pequeños, ofrecer el alimento en una forma blanda y apropiada para su etapa reduce el riesgo de atragantamiento.</p></article>
+      <article class="card"><h3>🍽️ Digestión sensible</h3><p>Un aumento brusco de fibra puede causar gases o distensión en algunas personas. Empezar con porciones moderadas puede mejorar la tolerancia.</p></article>
+    </div>
+    <div class="warning" style="margin-top:22px"><strong>Importante:</strong> esta página es informativa y no sustituye la indicación de un médico o dietista, especialmente si existe una enfermedad renal, tratamiento anticoagulante, enfermedad tiroidea o alergia alimentaria.</div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Resumen rápido</h2>
+    <div class="grid">
+      <article class="card"><h3>🌱 Germinación</h3><p><strong>≈ 10 días</strong> en condiciones favorables.</p></article>
+      <article class="card"><h3>⏱️ Cosecha</h3><p><strong>≈ 50–60 días</strong> para muchas variedades.</p></article>
+      <article class="card"><h3>🥕 Parte comestible</h3><p>Raíz y, según la variedad y la cocina, hojas tiernas.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="container sources">
+  <h3>Fuentes y referencias</h3>
+  <p>Los datos de cultivo y germinación se basan principalmente en la <a href="https://es.extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-turnips-and-rutabagas">Extensión de la University of Minnesota</a>. La composición nutricional de la raíz se basa en datos de <a href="https://fdc.nal.usda.gov/">USDA FoodData Central</a> (registro de nabo crudo; valores por 100 g).</p>
+  <p>Para el origen y la historia se consultaron <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279485-1/general-information">Plants of the World Online (Kew)</a> y literatura científica sobre la domesticación de <em>Brassica rapa</em>. La fotografía del encabezado es de Wikimedia Commons.</p>
+  <p><a href="#inicio">↑ Volver al inicio</a></p>
+</div>
+</footer>
+</body>
+</html>
